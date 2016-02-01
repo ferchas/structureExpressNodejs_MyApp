@@ -1,0 +1,18 @@
+module.exports = function(req, res, next) {
+  var file = __dirname + '/../models/';
+  var modules = [];
+  var controllers = require('require-all')({
+	  dirname     :  file,
+	  filter      :  /modelpack.js$/,
+	  excludeDirs :  /^\.(git|svn)$/,
+	  resolve     : function (Controller) { console.log(Controller);
+	    if(Controller._enabled && Controller._type == 'web')
+	     modules.push(Controller);
+	    
+	  }
+	});
+  
+  req.modules = modules;   
+  next();
+ 
+};

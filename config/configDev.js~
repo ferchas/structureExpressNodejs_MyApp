@@ -1,0 +1,7 @@
+// set config DEv Bs As
+module.exports ={
+	_path : 			"abm-landings",
+	_hostApiCluster: 	"10.254.168.101",
+	_portApiCluster: 	"1781"
+};
+

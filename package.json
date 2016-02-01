@@ -1,0 +1,26 @@
+{
+  "name": "Structure_Node",
+  "version": "1.0.0",
+  "description": "Punto entrada",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node_modules/.bin/mocha tests/**"
+  },
+  "keywords": [
+    "base",
+    "project",
+    "node",
+    "express",
+    "structure"
+  ],
+  "author": "Ferchas",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "require-all": "^2.0.0"
+  },
+  "devDependencies": {}
+}
